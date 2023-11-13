@@ -49,3 +49,6 @@ class TestLoneSum(SimpleTestCase):
     def test_lone_3_2_3(self):
         response = self.client.get("/Logic2/lone-sum/3/2/3")
         self.assertContains(response, 2)
+    def test_lone_3_2_3(self):
+        response = self.client.get("/Logic2/lone-sum/3/3/3")
+        self.assertContains(response, 0)
